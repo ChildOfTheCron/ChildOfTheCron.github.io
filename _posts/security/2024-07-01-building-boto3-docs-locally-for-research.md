@@ -15,7 +15,7 @@ A side-effect of my day job is I often need to read a lot of AWS (and Azure uurg
 
 ### The idea
 
-Rather than looking at the AWS documentation itself, I was interested in the Boto3 scripting reference, as at the time I was using boto to run and grab some output for network analysis. Something that I thought was interesting was the DryRun argument that you could pass into various functions in Boto3. **My goal here is to find all the functions in AWS Boto3 that accepts the DryRun argument.** This will be useful for some future research I am planning on doing, which I won't go into now. I might write another post once I have done the research and something useful comes from it.
+Rather than looking at the AWS documentation itself, I was interested in the Boto3 scripting reference, as at the time I was using boto to run and grab some output for network analysis. Something that I thought was interesting was the DryRun argument that you could pass into various functions in Boto3. **My goal here is to find all the services in AWS Boto3 that accepts the DryRun argument.** This will be useful for some future research I am planning on doing, which I won't go into now. I might write another post once I have done the research and something useful comes from it.
 
 To create this list I thought I’d take the advice from the talk, and compile a local copy of the Boto3 documentation, then grep for it. I thought it might be useful to document my process for others who want to do something similar.
 
