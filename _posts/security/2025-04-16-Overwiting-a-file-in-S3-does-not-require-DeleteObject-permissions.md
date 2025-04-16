@@ -1,6 +1,4 @@
 
-# Overwiting a file in S3 does not require DeleteObject permissions
-
 ## Assumption
 Something I wasn't quite sure about in AWS is if DeleteObject permission is required when overwriting an object in S3. So I ran a little test to check.
 
