@@ -51,5 +51,7 @@ download: s3://test-env-name-ssec-test-bucket-a/plaintext.txt to ./plaintext.txt
     Salted__
     
     @_   F  A]Ʃne    ? 4%
+
+
 As can be seen above, we were able to overwrite an existing S3 object without the need for DeleteObject permissions.
 
