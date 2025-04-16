@@ -42,7 +42,7 @@ upload: ./plaintext.txt to s3://test-env-name-ssec-test-bucket-a/plaintext.txt
 
 ### Downloading the original file and making sure it was overwritten / encrypted:
 
-➜  ~ aws --profile attacksim s3 cp s3://test-env-name-ssec-test-bucket-a/plaintext.txt ./plaintext.txt
+➜  ~ aws --profile testEnv s3 cp s3://test-env-name-ssec-test-bucket-a/plaintext.txt ./plaintext.txt
 
 download: s3://test-env-name-ssec-test-bucket-a/plaintext.txt to ./plaintext.txt
 
