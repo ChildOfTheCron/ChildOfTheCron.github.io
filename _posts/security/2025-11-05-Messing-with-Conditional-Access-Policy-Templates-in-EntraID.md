@@ -26,7 +26,7 @@ I pulled a non-template based conditional access policy's information using MS G
     {
         "id": "65e06963-UUID-OF-CAP",
         "templateId": "null",
-        "displayName": "Test-Cap-No-Tempalte",
+        "displayName": "Test-Cap-No-Template",
         "createdDateTime": "2025-11-05TT21:48:26:913458Z",
         "modifiedDateTime": "null",
         [...]
@@ -49,7 +49,7 @@ Following up with [the documentation here](https://learn.microsoft.com/en-us/gra
 
 One final check I wanted to do was see if this uniqueness held true across different Azure tenants. By that I mean, **does a templateid UUID from one Azure tenant match the same template UUID in another one**? So I created some test conditional access policies in another tenant and reran my tests. Sure enough, the templateIDs **remained the same across different Azure tenants**.
 
-What this means is that regardless of Azure tenant, one can use these template UUIDs to determine from which template the conditional access policy was created. These UUIDs cannot be changed, unlike the name field the conditional policy would have. So this templateId field could be useful to blueteamers when investigating conditional access policies.
+What this means is that regardless of Azure tenant, one can use these template UUIDs to determine from which template the conditional access policy was created. These UUIDs cannot be changed in the conditional access policies that are created from the template, unlike the policy name field. So this templateId field could be useful to blueteamers when investigating conditional access policies.
 
 For the sake of completeness, and because I couldn’t find this information documented anywhere on the internet, I am listing all the UUIDs for the conditional access templates below. Hopefully it’ll help others if they ever need to cross-reference which template a conditional access policy came from.  
 
