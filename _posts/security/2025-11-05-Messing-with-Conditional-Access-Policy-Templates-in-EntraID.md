@@ -1,5 +1,9 @@
-
-# Messing with Conditional Access Policy Templates in EntraID
+---
+layout: post
+title:  "Messing With Conditional Access Policy Templates In Entraid"
+date:   2025-05-11 18:11:33 +0100
+categories: security cloud
+---
 
 ## Background
 
