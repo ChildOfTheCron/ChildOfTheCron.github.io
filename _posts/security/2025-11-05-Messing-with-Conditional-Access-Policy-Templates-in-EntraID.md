@@ -11,7 +11,7 @@ Conditional Access Policies are pretty complex when you have more than a couple.
 
 To me there doesn’t seem to be an easy way to analyze conditional access policies, without going through each one, then cross-referencing each policy with the overall collection of policies, to figure out if an Identity is or is not allowed to do something. 
 
-This is a chore, but from my experimentation, there exists very few cheat codes that could quickly tell you what a conditional access policy was about. However while messing around I found that the templateId field may be somewhat helpful in this context.
+This is a chore, but from my experimentation, there exists very few cheat codes that could quickly tell you what a conditional access policy was about. However while messing around I found that the "templateId" field may be somewhat helpful in this context. Using it you are able to tell which template the conditional access policy was created from. And this templateId remains the same across all Azure tenants.
 
 ## Conditional Access Policy Templates
 
@@ -24,19 +24,19 @@ Even though conditional access policies (that are generated from a template) cou
 I pulled a non-template based conditional access policy's information using MS Graph API and noticed that one of the fields was called templateId, with a value of “null”.
 
     {
-        “id”: “65e06963-UUID-OF-CAP”,
-        “templateId”: “null”,
-        “displayName”: “Test-Cap-No-Tempalte”,
-        “createdDateTime”: “2025-11-05TT21:48:26:913458Z”,
-        “modifiedDateTime: “null”,
+        "id": "65e06963-UUID-OF-CAP",
+        "templateId": "null",
+        "displayName": "Test-Cap-No-Tempalte",
+        "createdDateTime": "2025-11-05TT21:48:26:913458Z",
+        "modifiedDateTime": "null",
         [...]
     }
 When generating a conditional access policy from a template, this value was (unsurprisingly) populated by a UUID.
 
     {
-        “id”: “6aef4e9f-UUID-OF-CAP”
-        “templateId”: “c7503427-338e-4c5e-902d-abe252abfb43”
-        “displayName”: “[Test] Require multifactor authentication for admins”
+        "id": "6aef4e9f-UUID-OF-CAP"
+        "templateId": "c7503427-338e-4c5e-902d-abe252abfb43"
+        "displayName": "[Test] Require multifactor authentication for admins"
         [...]
     }
     
