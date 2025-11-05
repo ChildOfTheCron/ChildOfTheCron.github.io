@@ -31,7 +31,10 @@ I pulled a non-template based conditional access policy's information using MS G
         "modifiedDateTime": "null",
         [...]
     }
+
+
 When generating a conditional access policy from a template, this value was (unsurprisingly) populated by a UUID.
+
 
     {
         "id": "6aef4e9f-UUID-OF-CAP"
