@@ -57,6 +57,8 @@ For the sake of completeness, and because I couldn’t find this information doc
 
 Note: You can’t see these UUIDs from the Azure Portal, both in cases where the policy is created or during creation. You’ll need to use the API to grab the data. I have not looked into using Powershell for this, but maybe that’d also work.
 
+Update: I noticed that the new Microsoft Managed policy to enforce MFA titled "Multifactor Authentication and Reauthentication for risky user sign in" is also generated from a template. But this template is hidden from view in the portal. It also has a UUID (4200930c-0da2-4e33-ca01-000000000007) which I'll add to the list below.
+
 | UUID | CAP Template Name |
 |--|--|
 | c7503427-338e-4c5e-902d-abe252abfb43 | Require multifactor authentication for admins |
@@ -93,6 +95,7 @@ Note: You can’t see these UUIDs from the Azure Portal, both in cases where the
 |--|--|
 | a297dd1a-21fe-4016-99a0-ba43ba64378c | Require MDM-enrolled and compliant device to access cloud apps for all users (Preview) |
 |--|--|
-
+| 4200930c-0da2-4e33-ca01-000000000007 | Multifactor Authentication and Reauthentication for risky user sign in |
+|--|--|
 
 
