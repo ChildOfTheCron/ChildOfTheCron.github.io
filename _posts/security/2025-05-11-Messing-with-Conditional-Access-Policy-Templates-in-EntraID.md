@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Messing With Conditional Access Policy Templates In Entraid"
-date:   2025-05-11 18:11:33 +0100
+date:   2025-11-05 18:11:33 +0100
 categories: security cloud
 ---
 
